@@ -51,14 +51,11 @@ The system allows deleted resources to be recreated from the generated archive.
 ```text
 Original resources
         ↓
-Filesystem traversal
-(Bash)
+Filesystem traversal (Bash)
         ↓
-Metadata extraction
-(chmod information)
+Metadata extraction (chmod information)
         ↓
-Encoding phase
-(C)
+Encoding phase (C)
         ↓
 Archive generation
         ↓
@@ -66,13 +63,11 @@ my-ball.sh
         ↓
 Archive execution
         ↓
-Decoding phase
-(C)
+Decoding phase (C)
         ↓
 Filesystem reconstruction
         ↓
-Permission restoration
-(chmod)
+Permission restoration (chmod)
 ```
 
 ---
@@ -227,27 +222,23 @@ Global pipeline:
 
 ```text
 Files / Directories
-            ↓
-Traversal
-(Bash)
-            ↓
-Permission extraction
-(chmod metadata)
-            ↓
-Encoding
-(C)
-            ↓
+      ↓
+Traversal (Bash)
+      ↓
+Permission extraction (chmod metadata)
+      ↓
+Encoding (C)
+      ↓
 Archive generation
-            ↓
+      ↓
 my-ball.sh
-            ↓
+      ↓
 Execution
-            ↓
-Decoding
-(C)
-            ↓
+      ↓
+Decoding (C)
+      ↓
 Reconstruction
-            ↓
+      ↓
 chmod restoration
 ```
 
